@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
 }
 
 /* MOBILE */
@@ -15,12 +19,57 @@
     align-content: center;
     padding: 2rem 1.5rem;
     align-items: center;
+    margin: auto 5%;
+
 }
 
 .logo {
-    width: 11rem;
+    width: 14rem;
 }
 
 .hamburger {
     width: 1rem;
 }
+
+.nav-container {
+    display:none;
+}
+
+@media screen and (min-width: 750px){
+   
+    .container {
+        border-bottom: 2px blue solid;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-container {
+        display: contents;
+    }
+
+    .nav-container ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-container li {
+        list-style: none;
+    }
+
+    .nav-container a {
+        text-decoration: none;
+        color: #83888F;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06rem;
+        font-size: 0.75rem;
+    }
+
+    .nav-container a:hover {
+        color: #333D4B;
+        cursor: pointer;
+    }
+}
+    

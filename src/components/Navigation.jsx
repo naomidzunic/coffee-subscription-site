@@ -11,6 +11,15 @@ function navigation() {
       <div className='container'>
       <img className='logo' src={logo} alt="logo" />
       <img className='hamburger' src={hamburger} alt="hamburger-icon" />
+      <div className='nav-container'>
+        <div className="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Create Your Plan</a></li>
+          </ul>
+        </div>
+      </div>
       </div>
 
 
