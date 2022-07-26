@@ -30,6 +30,5 @@ function navigation() {
 export default navigation
 
 
-// Logo can be found in coffee starter stuff > assets > shared > desktop
-
+// MISSING: JAVASCRIPT NAVIGATION FOR MOBILE
 
