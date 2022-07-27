@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
-
+/* FRAUNCES & BARLOW */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap');
 
 * {
     margin: 0;
@@ -8,18 +8,125 @@
     font-family: 'Barlow', sans-serif;
 }
 
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 0.94rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+button {
+    font-family: 'Fraunces', serif;
+    font-size: 1.125rem;
+
+}
+
+
 /* MOBILE */
 
-
-
-
-
-
-
-
-
-
-/* DESKTOP & TABLET */
-
-@media screen and (min-width: 750px){
+.header-container {
+    border: 2px solid red;
+    display: flex;
+    padding-bottom: 7.5rem;
 }
+
+.header-content {
+    text-align: center;
+    padding: 100px 24px;
+    background-image: url(../images/mobile/image-hero-coffeepress.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 24px;
+    border-radius: 10px;
+}
+
+.header-content h1 {
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.header-content p {
+    margin-bottom: 39px;
+    color: #fff;
+}
+
+button {
+    border: none;
+    background-color: #0E8784;
+    color: #fff;
+    padding: 1rem 1.9rem;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #66D2CF;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 750px) {
+    .header-container {
+        border: 2px solid blue;
+    }
+
+    .header-content {
+        text-align: left;
+        background-image: url(../images/tablet/image-hero-coffeepress.jpg);
+        margin: 0 40px;
+        height: 31.25rem;
+    }
+
+    .header-txt {
+        margin-left: 58px;
+        width: 59%;
+    }
+
+    .header-content h1 {
+        font-size: 48px;
+    }
+
+}
+
+/* DESKTOP */
+
+
+@media screen and (min-width: 1000px) {
+    .header-container {
+        border: 2px solid green;
+        padding: 0;
+    }
+    .header-content {
+        text-align: left;
+        background-image: url(../images/desktop/image-hero-coffeepress.jpg);
+        margin: 0 80px;
+        width: 100%;
+        height: 37.5rem;
+    }
+
+    .header-txt {
+        width: 50%;
+        margin-left: 85px;
+    }
+
+    .header-content h1 {
+        font-size: 72px;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+
+/* Where you left off: 
+- Aligning items for the header
+- Ensuring the transition between devices is smooth
+- Aligning content in mobile 
+- Ensuring content is smooth transition between devices
+- Change heading container to have a margin and not a padding at the bottom */
