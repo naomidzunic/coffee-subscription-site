@@ -1,0 +1,55 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+/* MOBILE */
+
+.collection-container {
+    border: 2px solid red;
+    text-align: center;
+    display: grid;
+}
+
+.collection-container h1 {
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 2.75rem;
+}
+
+.collection-container h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    color: #333D4B;
+    padding-bottom: 1rem;
+}
+
+.collection-container img {
+    width: 200px;
+}
+
+.collection-content {
+    padding: 2rem;
+}
+
+@media screen and (min-width: 750px) {
+}
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1000px) {
+    }
+
+
+
+
+    /* Making sure the collections are responsive via columns  */

@@ -6,20 +6,20 @@ import hamburgerClose from "../icons/icon-close.svg";
 import { MobileMenu } from "../components/MobileMenu";
 
 function navigation() {
-  state = { clicked: false }
+  // state = { clicked: false }
 
-  handleClick = ( => {
-    this.setState({ clicked: !this.state.clicked })
-  })
+  // handleClick = ( => {
+  //   this.setState({ clicked: !this.state.clicked })
+  // })
 
   return (
     <>
       <div className="navigation">
         <img className="logo" src={logo} />
 
-        <button className="hamburger" onClick={this.handleClick}>
+        <button className="hamburger">
 
-          <img className={this.state.clicked ? {hamburger} : {hamburgerClose}}/>
+          <img src={hamburger}/>
         </button>
 
         <div className="navigation-menu">

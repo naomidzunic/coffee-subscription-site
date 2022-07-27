@@ -26,5 +26,3 @@ function Header() {
 
 export default Header
 
-
-// OVERLAPPING IMAGE AND TEXT

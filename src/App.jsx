@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navigation from './components/Navigation'
 import Header from './components/Header';
+import Collection from './components/Collection';
 
 <logo className="svg"></logo>
 function App() {
@@ -8,8 +9,8 @@ function App() {
 
   return (
     <div>
-      <Navigation />
       <Header />
+      <Collection />
     </div>
   )
 }
