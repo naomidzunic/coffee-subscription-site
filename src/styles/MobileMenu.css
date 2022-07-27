@@ -1,0 +1,61 @@
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem 1.5rem;
+    align-items: center;
+    margin: auto 5%;
+}
+
+.logo {
+    width: 14rem;
+}
+
+.hamburger {
+    width: 1rem;
+    background-color: transparent;
+}
+
+.hamburger:hover {
+    background-color: transparent;
+}
+
+.navigation-menu {
+    display:none;
+}
+
+@media screen and (max-width:768px) {
+    
+    .navigation-menu ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: white;
+        border-top: 1px solid black;
+      }
+      .navigation-menu li {
+        text-align: center;
+        margin: 0;
+      }
+      .navigation-menu li a {
+        color: black;
+        width: 100%;
+        padding: 1.5rem 0;
+      }
+    }
+    
+}

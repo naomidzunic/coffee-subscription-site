@@ -1,34 +1,43 @@
-import React from 'react'
-import logo from '../icons/logo.svg';
-import CSS from './Navigation.css';
-import hamburger from '../icons/icon-hamburger.svg';
-
-
+import { useState } from "react";
+import logo from "../icons/logo.svg";
+import CSS from "../styles/Navigation.css";
+import hamburger from "../icons/icon-hamburger.svg";
+import hamburgerClose from "../icons/icon-close.svg";
+import { MobileMenu } from "../components/MobileMenu";
 
 function navigation() {
+  state = { clicked: false }
+
+  handleClick = ( => {
+    this.setState({ clicked: !this.state.clicked })
+  })
+
   return (
-    <nav>
-      <div className='container'>
-      <img className='logo' src={logo} alt="logo" />
-      <img className='hamburger' src={hamburger} alt="hamburger-icon" />
-      <div className='nav-container'>
-        <div className="nav-links">
+    <>
+      <div className="navigation">
+        <img className="logo" src={logo} />
+
+        <button className="hamburger" onClick={this.handleClick}>
+
+          <img className={this.state.clicked ? {hamburger} : {hamburgerClose}}/>
+        </button>
+
+        <div className="navigation-menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Create Your Plan</a></li>
+            {MobileMenu.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a className={item.className} href={item.url}>
+                    {item.title}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
-      </div>
-
-
-    </nav>
-  )
+    </>
+  );
 }
 
-export default navigation
-
-
-// MISSING: JAVASCRIPT NAVIGATION FOR MOBILE
-
+export default navigation;

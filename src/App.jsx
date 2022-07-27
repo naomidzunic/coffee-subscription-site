@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Navigation from './components/Navigation.jsx';
-import Header from './components/Header.jsx';
+import Navigation from './components/Navigation'
+import Header from './components/Header';
 
 <logo className="svg"></logo>
 function App() {

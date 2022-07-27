@@ -1,5 +1,5 @@
 import React from 'react'
-import CSS from './Header.css';
+import CSS from '../styles/Header.css'
 import frenchPress from '../images/mobile/image-hero-coffeepress.jpg';
 
 

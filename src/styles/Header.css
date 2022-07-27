@@ -1,4 +1,4 @@
-/* FRAUNCES & BARLOW */
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap');
 
 * {
@@ -22,16 +22,15 @@ p {
 button {
     font-family: 'Fraunces', serif;
     font-size: 1.125rem;
-
 }
 
 
 /* MOBILE */
 
 .header-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
-    padding-bottom: 7.5rem;
+    margin-bottom: 7.5rem;
 }
 
 .header-content {
@@ -45,14 +44,21 @@ button {
     border-radius: 10px;
 }
 
+.header-txt {
+    padding-right: 0;
+}
+
 .header-content h1 {
     margin-bottom: 24px;
     color: #fff;
+    padding-right: 0;
+    line-height: 1.1;
 }
 
 .header-content p {
     margin-bottom: 39px;
     color: #fff;
+    padding-right: 0;
 }
 
 button {
@@ -87,7 +93,12 @@ button:hover {
     }
 
     .header-content h1 {
-        font-size: 48px;
+        font-size: 5.5vw;
+        padding-right: 16%
+    }
+
+    .header-content p {
+padding-right: 15%;
     }
 
 }
@@ -110,11 +121,8 @@ button:hover {
 
     .header-txt {
         width: 50%;
-        margin-left: 85px;
-    }
-
-    .header-content h1 {
-        font-size: 72px;
+        margin-left: 7%;
+        padding-right: 0;
     }
 
     .header-content p {
@@ -122,11 +130,3 @@ button:hover {
         padding-bottom: 1rem;
     }
 }
-
-
-/* Where you left off: 
-- Aligning items for the header
-- Ensuring the transition between devices is smooth
-- Aligning content in mobile 
-- Ensuring content is smooth transition between devices
-- Change heading container to have a margin and not a padding at the bottom */
