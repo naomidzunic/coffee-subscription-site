@@ -13,15 +13,20 @@
 /* MOBILE */
 
 .collection-container {
-    border: 2px solid red;
+    border-bottom: 2px solid red;
     text-align: center;
-    display: grid;
+    display: relative;
+    margin: 0 165px 200px;
+ 
 }
 
 .collection-container h1 {
     text-transform: lowercase;
     text-align: center;
-    font-size: 2.75rem;
+    font-size: 9vw;
+    background-image:linear-gradient(0deg, rgba(242,242,242,1) 43%, rgba(131,136,143,1) 97%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .collection-container h2 {
@@ -33,23 +38,73 @@
 
 .collection-container img {
     width: 200px;
+    margin: 0 auto;
 }
 
 .collection-content {
-    padding: 2rem;
+    padding: 1rem;
+
+
 }
 
+/* TABLET */
+
 @media screen and (min-width: 750px) {
+    .collection-content {
+        display: flex;
+        /* border: 2px solid blue; */
+        text-align: left;
+    }
+
 }
 
 
 
 /* DESKTOP */
 
-@media screen and (min-width: 1000px) {
-    }
+@media screen and (min-width: 1150px) {
+
+  .collection-container {
+    margin: 0 6.31rem 12.5rem;
+}
+
+.collection-container img {
+    width: 14.4vw;
+}
+
+.collection-container h1 {
+    font-size: 10.5vw;
+}
+
+.collection-container h2 {
+    font-size: 1.6vw;
+}
+
+.collection-container p {
+    font-size: 1.06vw;
+}
+.collection-item-container {
+    /* border: 2px solid purple; */
+    display: flex;
+    flex-direction: row;
+    margin: -7% 5% 0;
+    justify-content: center;
+}
+
+.collection-content {
+    flex-direction: column;
+    text-align: center;
+}
 
 
 
 
-    /* Making sure the collections are responsive via columns  */
+
+
+}
+
+
+
+
+
+/* PICK UP WHERE YOU LEFT OFF: SIZING COLUMNS FOR TABLET SCREEN */
