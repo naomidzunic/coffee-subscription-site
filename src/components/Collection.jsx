@@ -14,13 +14,17 @@ function Collection() {
         <h1>Our Collection</h1>
 
         <div className="collection-item-container">
+          
           <div className="collection-content">
             <img src={Espresso} alt="" />
+            <div className="collection-content-txt">
+
             <h2>Gran Espresso</h2>
             <p>
               Light and flavorful blend with cocoa and black pepper for an
               intense experience
             </p>
+            </div>
           </div>
 
           <div className="collection-content">
