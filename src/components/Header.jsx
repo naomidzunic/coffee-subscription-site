@@ -10,7 +10,7 @@ function Header() {
       <div className="header-container">
         <div className="header-content">
           <div className="header-txt">
-          <h1>Great coffee made simple.</h1>
+          <h1>HELLO. Great coffee made simple.</h1>
           <p>
             Start your mornings with the world’s best coffees. Try our expertly
             curated artisan coffees from our best roasters delivered directly to

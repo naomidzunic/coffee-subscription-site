@@ -6,12 +6,18 @@ import hamburgerClose from "../icons/icon-close.svg";
 import { MobileMenu } from "../components/MobileMenu";
 
 
-function navigation() {
+export const navigation = () => {
   
-  state = { clicked: false }
+  // state = { clicked: false }
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked })
+  // handleClick = () => {
+  //   this.setState({ clicked: !this.state.clicked })
+  // }
+
+  const [toggle, setToggle]=useState(false);
+
+  const handleToggle=()=>{
+    setToggle(!toggle);
   }
 
   return (

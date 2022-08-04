@@ -43,6 +43,8 @@ MUST PROVIDE SINCE PAGES IS DOWN CURRENTLY
 
 When I realized I finished a simple HTML & CSS project within 24 hours I knew that I was ready to challenge myself with more Javascript & React. I chose this project because I felt it had enough JS where it didn't seem too hard but didn't seem impossible. Sure I'll be Googling more and asking for help more often but that's a part of the process. I also chose to go with React JS as a way to get comfortable with creating apps with it as future jobs will likely require it. 
 
+The biggest hurdles I had to face but bugs showing up all over the place when adding Javascript for the Navigation hamburger menu. It took me a while to learn React Hooks but also ensuring that it shows up. In addition the React server stopped working, thus keeping me from progressing in the project until I was able to figure out the server bug. To fix this I went to Youtube, StackOverflow, Reddit, and Slack communities that I'm a part of specifically for web developers. 
+
 ### Built with
 
 - Semantic HTML5 markup
