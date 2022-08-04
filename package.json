@@ -5,12 +5,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "react-scripts start"
+    "preview": "vite preview"
   },
   "dependencies": {
     "g": "^2.0.1",
